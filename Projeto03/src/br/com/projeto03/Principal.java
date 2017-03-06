@@ -32,7 +32,7 @@ public class Principal
         }
        Quadrilateros q = new Quadrilateros();
        q.Quadrilateros(2f, 4f, 6f, 7f);
-        q.calcPerimetro();
+       q.calcPerimetro();
        
         
 //        JOptionPane.showInputDialog(null,"O sistema apresentou um erro favor verificar:", "ALERTA",JOptionPane.QUESTION_MESSAGE,  );

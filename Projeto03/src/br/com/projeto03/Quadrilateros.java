@@ -1,7 +1,7 @@
 
 package br.com.projeto03;
 
-public abstract class Quadrilateros 
+public abstract class Quadrilateros implements CalcForma//Sabemos que o quadrado é um quadrilátero com todos os lados congruentes (com a mesma medida).
 {
     private float lado1;
     private float lado2;
@@ -15,6 +15,18 @@ public abstract class Quadrilateros
         this.lado3 = lado3;
         this.lado4 = lado4;
                 
+    }
+
+    @Override
+    public void calcPerimetro() 
+    {
+        
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void calcArea() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

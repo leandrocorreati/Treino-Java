@@ -7,5 +7,4 @@ public class Quadrados
     {
         this.tLado = tLado;
     }
-    
 }

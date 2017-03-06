@@ -1,7 +1,7 @@
 
 package br.com.projeto03;
 
-public abstract class Quadrilateros implements CalcForma//Sabemos que o quadrado é um quadrilátero com todos os lados congruentes (com a mesma medida).
+public  class Quadrilateros implements CalcForma//Sabemos que o quadrado é um quadrilátero com todos os lados congruentes (com a mesma medida).
 {
     private float lado1;
     private float lado2;
@@ -48,15 +48,15 @@ public abstract class Quadrilateros implements CalcForma//Sabemos que o quadrado
         this.lado4 = lado4;
     }
 
-    public float calcPerimetro(float calc) 
+    @Override
+    public void calcPerimetro() 
     {
-        calc = getLado1()+ getLado2() + getLado3()+ getLado4();
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        float perimetro = this.getLado1()+ this.getLado2() + this.getLado3()+ this.getLado4();
+        System.out.println(perimetro);
     }
 
     @Override
     public void calcArea() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
 }

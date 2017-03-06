@@ -30,9 +30,9 @@ public class Principal
                             JOptionPane.showInputDialog(null, "Informe a altura:", "ALTURA", JOptionPane.QUESTION_MESSAGE);
                 break;
         }
-        
-        
-       Quadrados q = new Quadrados(2.5f);
+       Quadrilateros q = new Quadrilateros();
+       q.Quadrilateros(2f, 4f, 6f, 7f);
+        q.calcPerimetro();
        
         
 //        JOptionPane.showInputDialog(null,"O sistema apresentou um erro favor verificar:", "ALERTA",JOptionPane.QUESTION_MESSAGE,  );

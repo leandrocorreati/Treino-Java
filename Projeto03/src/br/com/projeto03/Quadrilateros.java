@@ -54,12 +54,12 @@ public abstract class Quadrilateros implements CalcForma//Sabemos que o quadrado
     public void calcPerimetro() 
     {
         float perimetro = this.getLado1()+ this.getLado2() + this.getLado3()+ this.getLado4();
-        JOptionPane.showMessageDialog(null, " A figura tem " + perimetro + " de perimetro");
-//        System.out.println(perimetro);
+        JOptionPane.showMessageDialog(null, " A figura tem " + perimetro + " de perimetro","PERIMETRO",JOptionPane.INFORMATION_MESSAGE);
     }
 
     @Override
-    public void calcArea() {
+    public void calcArea() 
+    {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

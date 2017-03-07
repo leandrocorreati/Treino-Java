@@ -6,10 +6,10 @@ public class Quadrados extends Quadrilateros
     public Quadrados(float tLado) 
     {
         this.tLado = tLado;
-        setLado1(tLado);
-        setLado2(tLado);
-        setLado3(tLado);
-        setLado4(tLado);
+        this.setLado1(tLado);
+        this.setLado2(tLado);
+        this.setLado3(tLado);
+        this.setLado4(tLado);
     }
     public float gettLado() {
         return tLado;
@@ -18,7 +18,4 @@ public class Quadrados extends Quadrilateros
     public void settLado(float tLado) {
         this.tLado = tLado;
     }
-    
-    
-    
 }

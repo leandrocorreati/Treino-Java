@@ -8,14 +8,11 @@ public class Retangulos extends Quadrilateros
     {
         this.tBase = tBase;
         this.tAltura = tAltura;
-        setLado1(tBase);
-        setLado2(tAltura);
-        setLado3(tBase);
-        setLado4(tAltura);
-        
+        this.setLado1(tBase);
+        this.setLado2(tAltura);
+        this.setLado3(tBase);
+        this.setLado4(tAltura);
     }
-    
-
     public float gettBase() {
         return tBase;
     }
@@ -31,5 +28,4 @@ public class Retangulos extends Quadrilateros
     public void settAltura(float tAltura) {
         this.tAltura = tAltura;
     }
-    
 }

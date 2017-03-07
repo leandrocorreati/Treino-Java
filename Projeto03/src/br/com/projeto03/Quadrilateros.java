@@ -1,4 +1,3 @@
-
 package br.com.projeto03;
 
 import javax.swing.JOptionPane;
@@ -60,6 +59,7 @@ public abstract class Quadrilateros implements CalcForma//Sabemos que o quadrado
     @Override
     public void calcArea() 
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       float area = this.getLado1()* this.getLado2();
+       JOptionPane.showMessageDialog(null," A área da figura escolhida é "+ area, "ÁREA DE QUADRILATEROS", JOptionPane.INFORMATION_MESSAGE);
     }
 }

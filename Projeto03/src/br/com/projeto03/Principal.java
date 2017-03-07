@@ -26,12 +26,14 @@ public class Principal {
                 raio = Float.parseFloat(JOptionPane.showInputDialog(null, "Você escolheu um " + tipoForma + "\nInforme o valor do raio:", "RAIO", JOptionPane.QUESTION_MESSAGE));
                 Circulos c = new Circulos(raio); // raio do circulo
                 c.calcPerimetro();
+                c.calcArea();
                 break;
             case "Retangulo":/*JOptionPane.showMessageDialog(null, "Você escolheu um " + tipoForma);*/
                 base = Float.parseFloat(JOptionPane.showInputDialog(null, "Você escolheu um " + tipoForma + " \nInforme a base: ", "BASE", JOptionPane.QUESTION_MESSAGE));
                 altura = Float.parseFloat(JOptionPane.showInputDialog(null, "Informe a altura:", "ALTURA", JOptionPane.QUESTION_MESSAGE));
                 Retangulos r = new Retangulos(base, altura); // altura e base
                 r.calcPerimetro();
+                r.calcArea();
                 break;
             case "Quadrado":
                 /*JOptionPane.showMessageDialog(null, "Você escolheu um " + tipoForma);*/
@@ -39,6 +41,7 @@ public class Principal {
 //                JOptionPane.showInputDialog(null, "Informe a altura:", "ALTURA", JOptionPane.QUESTION_MESSAGE);
                 Quadrados q = new Quadrados(lado); // apenas um lado
                 q.calcPerimetro();
+                q.calcArea();
                 break;
         }
 //        JOptionPane.showInputDialog(null,"O sistema apresentou um erro favor verificar:", "ALERTA",JOptionPane.QUESTION_MESSAGE,  );

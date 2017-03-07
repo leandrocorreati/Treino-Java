@@ -1,4 +1,8 @@
 package br.com.projeto03;
+
+import java.text.DecimalFormat;
+import javax.swing.JOptionPane;
+
 public class Circulos implements CalcForma
 {
     private float raio;
@@ -19,15 +23,16 @@ public class Circulos implements CalcForma
     @Override
     public void calcPerimetro() 
     {
+        DecimalFormat d = new DecimalFormat("0.00");
         float circunferencia = 2 * 3.14f * getRaio();
-        System.out.printf("%f",+circunferencia);
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//        System.out.println(d.format(circunferencia));
+        JOptionPane.showMessageDialog(null, "A circunferencia da figura é " + d.format(circunferencia),"CIRCULO",JOptionPane.INFORMATION_MESSAGE);
     }
 
     @Override
     public void calcArea() 
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
     
 }

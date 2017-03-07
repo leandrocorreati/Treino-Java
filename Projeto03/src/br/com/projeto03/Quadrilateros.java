@@ -1,6 +1,8 @@
 
 package br.com.projeto03;
 
+import javax.swing.JOptionPane;
+
 public abstract class Quadrilateros implements CalcForma//Sabemos que o quadrado é um quadrilátero com todos os lados congruentes (com a mesma medida).
 {
     private float lado1;
@@ -52,7 +54,8 @@ public abstract class Quadrilateros implements CalcForma//Sabemos que o quadrado
     public void calcPerimetro() 
     {
         float perimetro = this.getLado1()+ this.getLado2() + this.getLado3()+ this.getLado4();
-        System.out.println(perimetro);
+        JOptionPane.showMessageDialog(null, " A figura tem " + perimetro + " de perimetro");
+//        System.out.println(perimetro);
     }
 
     @Override

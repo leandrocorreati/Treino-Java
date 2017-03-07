@@ -10,29 +10,38 @@ public class Principal
 //        int qtFormas = Integer.parseInt(qtFormasTxt);
 //        JOptionPane.showInputDialog("Quantas formas deseja criar ? ");
 //        int n[] = {3,3,3};
-        
         int qtFormas = Integer.parseInt(JOptionPane.showInputDialog("Quantas formas deseja criar ? "));
         Object[] formas = {"Circulo", "Retangulo", "Quadrado"};
-        Object selecione = JOptionPane.showInputDialog(null,"Escolha uma Forma", "Opções: ", 
-                           JOptionPane.INFORMATION_MESSAGE,null,formas,formas[0]);
-       String tipoForma = selecione.toString();
-        switch(tipoForma)
-        {
-            case "Circulo" : /*JOptionPane.showMessageDialog(null, "Você escolheu um " + tipoForma);*/
-                             JOptionPane.showInputDialog(null,"Você escolheu um " + tipoForma + "\nInforme o valor do raio:", "RAIO",JOptionPane.QUESTION_MESSAGE);
+        Object selecione = JOptionPane.showInputDialog(null, "Escolha uma Forma", "Opções: ",
+                JOptionPane.INFORMATION_MESSAGE, null, formas, formas[0]);
+        String tipoForma = selecione.toString();
+        switch (tipoForma) {
+            case "Circulo":
+                /*JOptionPane.showMessageDialog(null, "Você escolheu um " + tipoForma);*/
+                JOptionPane.showInputDialog(null, "Você escolheu um " + tipoForma + "\nInforme o valor do raio:", "RAIO", JOptionPane.QUESTION_MESSAGE);
                 break;
             case "Retangulo":/*JOptionPane.showMessageDialog(null, "Você escolheu um " + tipoForma);*/
-                             JOptionPane.showInputDialog(null,"Você escolheu um " + tipoForma +" \nInforme a base: ", "BASE", JOptionPane.QUESTION_MESSAGE);
-                             JOptionPane.showInputDialog(null, "Informe a altura:","ALTURA",JOptionPane.QUESTION_MESSAGE);
+                JOptionPane.showInputDialog(null, "Você escolheu um " + tipoForma + " \nInforme a base: ", "BASE", JOptionPane.QUESTION_MESSAGE);
+                JOptionPane.showInputDialog(null, "Informe a altura:", "ALTURA", JOptionPane.QUESTION_MESSAGE);
                 break;
-            case "Quadrado": /*JOptionPane.showMessageDialog(null, "Você escolheu um " + tipoForma);*/
-                            JOptionPane.showInputDialog(null, "Você escolheu um " + tipoForma + " \nInforme a base: ", "BASE", JOptionPane.QUESTION_MESSAGE);
-                            JOptionPane.showInputDialog(null, "Informe a altura:", "ALTURA", JOptionPane.QUESTION_MESSAGE);
+            case "Quadrado":
+                /*JOptionPane.showMessageDialog(null, "Você escolheu um " + tipoForma);*/
+                JOptionPane.showInputDialog(null, "Você escolheu um " + tipoForma + " \nInforme a base: ", "BASE", JOptionPane.QUESTION_MESSAGE);
+                JOptionPane.showInputDialog(null, "Informe a altura:", "ALTURA", JOptionPane.QUESTION_MESSAGE);
                 break;
         }
-       Quadrilateros q = new Quadrilateros();
-       q.Quadrilateros(2f, 4f, 6f, 7f);
-       q.calcPerimetro();
+        Quadrados q = new Quadrados(2.5f);
+        q.calcPerimetro();
+        
+        Retangulos r = new Retangulos(4.5f, 6.5f);
+        r.calcPerimetro();
+        
+        Circulos c = new Circulos(5);
+        c.calcPerimetro();
+        
+        
+       
+       
        
         
 //        JOptionPane.showInputDialog(null,"O sistema apresentou um erro favor verificar:", "ALERTA",JOptionPane.QUESTION_MESSAGE,  );

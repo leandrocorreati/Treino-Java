@@ -1,7 +1,7 @@
 
 package br.com.projeto03;
 
-public  class Quadrilateros implements CalcForma//Sabemos que o quadrado é um quadrilátero com todos os lados congruentes (com a mesma medida).
+public abstract class Quadrilateros implements CalcForma//Sabemos que o quadrado é um quadrilátero com todos os lados congruentes (com a mesma medida).
 {
     private float lado1;
     private float lado2;

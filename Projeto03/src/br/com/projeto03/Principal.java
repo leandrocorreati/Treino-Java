@@ -20,7 +20,8 @@ public class Principal {
                 JOptionPane.INFORMATION_MESSAGE, null, formas, formas[0]);
         String tipoForma = selecione.toString();
         
-        switch (tipoForma) {
+        switch (tipoForma) 
+        {
             case "Circulo":
                 /*JOptionPane.showMessageDialog(null, "Você escolheu um " + tipoForma);*/
                 raio = Float.parseFloat(JOptionPane.showInputDialog(null, "Você escolheu um " + tipoForma + "\nInforme o valor do raio:", "RAIO", JOptionPane.QUESTION_MESSAGE));

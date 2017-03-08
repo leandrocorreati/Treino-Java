@@ -1,34 +1,45 @@
 package br.com.projeto05;
 
-public class FabricaLampada 
+public class FabricaLampada  //OBS: UMA CLASSE ABSTRATA NÃO PODE SE INSTANCIADA, ENQUANTO UMA CLASSE FINEL NÃO PODE RECEBER HERANÇA
+                             //OBS: POLIMORFISMO SE TRATA DA ALTERAÇÃO DAS AÇÕES DE UM METODO RECEBIDO POR HERANÇA MANTENDO SUA ASSINATURA
+        
 {
-    public class Incandescente implements Lampada
-    {
-
-        @Override
-        public void ligar() {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
-
-        @Override
-        public void desligar() {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    private String tipo;
+    
+        public String construir(String tipo)
+        {
+            this.tipo = tipo;
+            
+            return tipo;
         }
         
+    public class Incandescente implements Lampada
+    {
+        @Override
+        public void ligar() 
+        {
+            System.out.println("Está ligada");
+        }
+
+        @Override
+        public void desligar() 
+        {
+            System.out.println("Está desligada");
+        }
     }
     
     public class Fluorescente implements Lampada
     {
-
         @Override
-        public void ligar() {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        public void ligar() 
+        {
+            System.out.println("Está ligada");
         }
 
         @Override
-        public void desligar() {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        public void desligar() 
+        {
+            System.out.println("Está desligada");
         }
-        
     }
 }

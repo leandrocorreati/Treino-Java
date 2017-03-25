@@ -1,4 +1,4 @@
-package br.com.projeto;
+package br.com.projeto08;
 public class Funcionarios 
 {
     private int rg;

@@ -46,16 +46,20 @@ public class Produtos
     }
 
 //    @Override
-    public boolean comparacao(Object obj) {
-        if (this == obj) {
+    public boolean comparacao(Object obj) 
+    {
+        if (this == obj) 
+        {
             return true;
         }
-        if (obj == null) {
+        if (obj == null) 
+        {
             return false;
         }
         
         final Produtos other = (Produtos) obj;
-        if (this.codigoBarra != other.codigoBarra) {
+        if (this.codigoBarra != other.codigoBarra) 
+        {
             return false;
         }
         return true;
